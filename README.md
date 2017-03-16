@@ -5,6 +5,8 @@
 
 ## Angular
 
+![](./angular.png)
+
 구글에서 만든 짱짱맨 앵귤러는 web front-end를 위한 framework 이다.
 (angularjs는 흔히 처음 만든 angular1을 지칭하고 angular는 새로나온 angular2를 지칭한다)
 
