@@ -17,7 +17,7 @@ class Anagram {
     }
     
     func match(words: [String]) -> [String] {
-        
+        /*
         var result: [String] = []
         let self_word = self.word
         
@@ -47,6 +47,16 @@ class Anagram {
                 }
             }
         }
+        return result
+        */
+        
+        var result = words.filter({word in
+            return !isSameWord(word, self.word, insensitive: true)
+                && isSameLength(word, self.word)
+        })
+        result = result.filter({ word in
+            return word.lowercased().characters.sorted(by: >) == self.word.lowercased().characters.sorted(by: >)
+        })
         return result
     }
 }
